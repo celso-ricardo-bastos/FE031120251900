@@ -1,5 +1,21 @@
 /* Formatando a index */
 
+.header {
+    display: flex;
+    justify-content: space-around;
+}
+
+.logo {
+    background-color: blue;
+}
+
+.menu {
+    background-color: blueviolet;
+}
+
+.get-a-quote {
+    background-color: aquamarine;
+}
 
 
 /* #item {
