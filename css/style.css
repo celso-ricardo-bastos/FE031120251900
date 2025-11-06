@@ -1,14 +1,26 @@
 /* Formatando a index */
 
+html {
+    font-size: var(--font-size);
+}
+
+/* Reset configurações aplicadas pelo browser */
 * {
     margin: 0;
+    padding: 0;
+    border: 0;
     box-sizing: border-box;
+    font-size: 100%;
 }
 
 .header {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
+}
+
+.menu{
+    width: 35%;
 }
 
 .menu-itens {
@@ -17,35 +29,42 @@
     justify-content: center;
 }
 
+/* Menu header */
 .item {
     text-decoration: none;
     padding: 10px;
     display: block;
-    font-size: 16px;
+    color: var(--cor-proclen-gray);
+    font-size: 1.6rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
+.active {
+    color: var(--cor-proclen-green-light);
+}
+
 
 /* .item:hover {
     background-color: aqua;
 } */
 
 .menu-itens li {
-    /* border: 1px red solid; */
     margin: 1px;
 }
 
 .btn-green {
-    background-color: #36B864;
+    background-color: var(--cor-proclen-green-light);
     border: transparent;
-    color: #ffffff;
+    color: var(--cor-proclen-white);
     border-radius: 3px;
     padding: 10px 20px;
     cursor: pointer;
+    font-size: 1.6rem;
 }
 
 .btn-green:hover {
-    background-color: #1a9344;
+    background-color: var(--cor-proclen-green-dark);
 }
-
 
 /* #item {
     color: rgb(61, 43, 226);
