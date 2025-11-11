@@ -10,6 +10,13 @@ html {
     src: url(../fonts/PlayfairDisplay-VariableFont_wght.ttf);
 }
 
+.clean-content {
+    border: #000000 1px solid;
+    width: 70%;
+    margin: auto;
+}
+
+
 /* Reset configurações aplicadas pelo browser */
 * {
     margin: 0;
@@ -56,10 +63,6 @@ html {
     color: var(--cor-proclen-green-light);
 }
 
-/* .item:hover {
-    background-color: aqua;
-} */
-
 .menu-itens li {
     margin: 1px;
 }
@@ -68,6 +71,17 @@ html {
     font-size: 5.2rem;
 }
 
+.logo{
+    display: block;
+    /* height: 150px;
+    width: 150px;
+    border: 1px #000000 solid; */
+    /* border-radius: 50%; */
+    height: auto;
+}
+
+
+/* Botoes */
 .btn-green {
     background: linear-gradient(var(--cor-proclen-green-light), rgb(11, 77, 2));
     border: transparent;
@@ -96,22 +110,9 @@ a[class*="btn-transparent"]:hover {
     background-color: #00000019;
 }
 
-/* .btn-green.btn-transparent.teste {
-
-} */
-
 .btn-green:hover {
     background: linear-gradient(rgb(11, 77, 2), var(--cor-proclen-green-light));
     text-shadow: -1px 1px 1px #000000;
-}
-
-.logo{
-    display: block;
-    /* height: 150px;
-    width: 150px;
-    border: 1px #000000 solid; */
-    /* border-radius: 50%; */
-    height: auto;
 }
 
 /* Formatação da Main */
@@ -152,6 +153,39 @@ a[class*="btn-transparent"]:hover {
     justify-content: flex-start;
     padding: 38px 0 0;
 }
+
+/* Section Services */
+.header-service {
+    display: flex;
+    font-size: 2rem;
+    justify-content: space-between;
+}
+
+.header-service > div {
+    width: 40%;
+}
+
+.service-description {
+    background-color: aqua;
+    overflow-y: auto;
+    /* Para renderizar no crhome e safary */
+    -webkit-border-radius: 50px;
+    /* Renderiza para versões atuais */
+    border-radius: 50px;
+    
+    /* Para renderizar no firefox */
+    -moz-border-radius: 50px;
+}
+
+
+/* Media Query */
+
+@media screen and (max-width: 600px)  {
+    .menu {
+        display: none;
+    }
+}
+
 
 /* header {
     background-color: rgb(106, 104, 129);

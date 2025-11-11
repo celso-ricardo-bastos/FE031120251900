@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transiotion</title>
+    <style>
+        .pai {
+            width: 100%;
+            border: 1px solid #000;
+            height: 300px;
+            position: relative;
+            background-color: aqua;
+        }
+
+        .filha {
+            width: 100px;
+            height: 50px;
+            background-color: blue;
+            position: absolute;
+            left: 50%;
+            bottom: 0;
+            opacity: 1;
+            margin-left: -50px;
+            /* transition-property: height, background-color, opacity; */
+            /* transition-duration: 1s, 2s, 5s; */
+            animation-name: pula;
+            animation-duration: 4s;
+            /* animation-delay: 3s; */
+            animation-iteration-count: infinite;
+            /* animation-direction: alternate; */
+            animation-timing-function: ease-out;
+            /* animation-fill-mode: forwards; */
+        }
+
+        .filha:hover {
+            height: 130px;
+            cursor: pointer;
+            background-color: rgb(255, 0, 251);
+            opacity: 0;
+        }
+
+        @keyframes pula {
+            0% {
+                left: 50%;
+                bottom: 0;
+                margin-left: -50px;
+            }
+
+            50% {
+                left: 50%;
+                bottom: 120px;
+                margin-left: -50px;
+            }
+
+            70% {
+                left: 80%;
+                bottom: 120px;
+                margin-left: -50px;
+            }
+
+            80% {
+                left: 80%;
+                bottom: 0;
+                margin-left: -50px;
+            }
+
+            100% {
+                left: 50%;
+                bottom: 0;
+                margin-left: -50px;
+            }
+
+        }
+    </style>
+</head>
+<body>
+    <div class="pai">
+        <div class="filha"></div>
+    </div>
+</body>
+</html>
