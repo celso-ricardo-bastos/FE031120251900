@@ -1,0 +1,9 @@
+@media print{
+    .menu, .get-a-quote {
+        display: none;
+    }
+
+    @page{
+        margin: 0;
+    }
+}

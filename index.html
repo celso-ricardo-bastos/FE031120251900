@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="css/custom.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/icones.css">
+    <link rel="stylesheet" href="css/services.css">
+    <link rel="stylesheet" href="css/imprimir.css">
 </head>
 
 <body>
@@ -25,11 +27,6 @@
                                 <a href="#" class="item active">
                                     Home
                                 </a>
-                                <!-- <ul class="sub-menu">
-                                <li>teste 1</li>
-                                <li>teste 2</li>
-                                <li>teste 3</li>
-                            </ul>  -->
                             </li>
                             <li> <a href="#" class="item">About us</a> </li>
                             <li> <a href="#" class="item">Service</a> </li>
@@ -39,7 +36,7 @@
                     </nav>
                 </div>
                 <div class="get-a-quote">
-                    <a href="#"><button class="btn-green">Get a quote</button></a>
+                    <a href="#"><button class="btn-green" onclick="window.print()">Get a quote</button></a>
                 </div>
             </div>
         </div>
@@ -60,32 +57,62 @@
         </div>
     </main>
     
-    <section>
+    <section class="services">
         <div class="container">
             <div class="clean-content">
-                <div class="header-service">
-                    <div>
-                        <h2>We always provide the best service</h2>
+                <div class="header-service header-service-lg ptb linha">
+                    <div class="coluna coluna-lg-5 coluna-md-12">
+                        <h2 class="h2 h2-sm h2-md ptb">We always provide the best service</h2>
                     </div>
-                    <div class="service-description">
-                        <span><strong>Services</strong></span>
-                        <p>While we can customize your cleaning plan to suit your needs, most clients schedule regular cleaning services:</p>
+                    <div class="coluna coluna-lg-5 coluna-md-12 service-description">
+                        <span class="titulo ptb"><strong>Services</strong></span>
+                        <p class="descricao ptb">While we can customize your cleaning plan to suit your needs, most clients schedule regular cleaning services:</p>
                     </div>
                 </div>
-                <div class="body-service">
-    
+                <div class="body-service linha">
+                    <!-- Card Office Cleaning -->
+                    <div class="card coluna coluna-lg-4">
+                        <div class="img-top">
+                            <img src="img/service3.png" alt="" class="imagem">
+                        </div>
+                        <h3 class="h3">Office Cleaning</h3>
+                        <p class="resumo">While we can customize your cleaning plan to suit your needs, most clients schedule regular cleaning services:</p>
+
+                        <button class="btn-green">Book Now</button>
+                    </div>
+
+                    <!-- Card Spring Cleaning -->
+                    <div class="card coluna coluna-lg-4">
+                        <div class="img-top">
+                            <img src="img/service2.png" alt="" class="imagem">
+                        </div>
+                        <h3 class="h3">Spring Cleaning</h3>
+                        <p class="resumo">While we can customize your cleaning plan to suit your needs, most clients schedule regular cleaning services:</p>
+
+                        <button class="btn-green">Book Now</button>
+                    </div>
+
+                    <!-- Card House Cleaning -->
+                    <div class="card coluna coluna-lg-4">
+                        <div class="img-top">
+                            <img src="img/service1.png" alt="" class="imagem">
+                        </div>
+                        <h3 class="h3">House Cleaning</h3>
+                        <p class="resumo">While we can customize your cleaning plan to suit your needs, most clients schedule regular cleaning services:</p>
+
+                        <button class="btn-green">Book Now</button>
+                    </div>
+                    
+                    
                 </div>
             </div>
         </div>
     </section>
 
     <section>
-        Alunos
-
     </section>
 
     <footer>
-
     </footer>
 
     <div class="screen">
