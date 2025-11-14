@@ -11,10 +11,9 @@
     Exemplo de saida
     ###############################
 
-    Nome do cliente: xxxxxx
     Produto: xxxxx
     Valor Unitario: xxxx
-    Total da compra: xxxxx
+    Total da compra (com imposto): xxxxx
     Imposto cobrado: 20%
 
     -------------------------------------
@@ -29,34 +28,36 @@
 */
 
 const imposto = 0.2;
-
-const campos = [
-    'Nome do cliente: ',
+const camposSaida = [
     'Produto: ',
     'Valor Unitario: ',
     'Total da compra: ',
-]
+    'Imposto cobrado: 20%',
+];
+const produtos = [
+    ['Sabão', 2.00], // cod 1
+    ['Leite', 5.00], // cod 2
+    ['Açucar',5.50], // cod 3
+];
+
+const dados = [];
 
 const mensagens = [
-    'digite seu nome',
-    'digite o nome do produto', 
+    'codigo do produto',
     'digite a quantidade',
-    'Valor do Produto',
 ];
 
 for(let i = 0; i < mensagens.length; i++) {
-
-    let dados = prompt(mensagens[i]) 
-
-    // if (i == 3) {
-    //     dados = 
-    // }
-
-    console.log(`${campos[i]} ${dados}`)
-
-
+    let dado = prompt(mensagens[i]) 
+    dados.push(dado);
 }
 
+const cod = dados[0];
+const produtoSelecionado = produtos[cod - 1]
+const totalCompraSemImposto = (dados[1] * produtoSelecionado[1]);
+const totalComImposto = totalCompraSemImposto + totalCompraSemImposto * imposto;
 
-var volteSempre = prompt ('Obrigado e volte sempre!')
-console.log('Obrigado e volte sempre!')
+console.log(`${camposSaida[0]} ${produtoSelecionado[0]}`);
+console.log(`${camposSaida[1]} ${produtoSelecionado[1]}`);
+console.log(`${camposSaida[2]} ${totalComImposto}`);
+console.log(`${camposSaida[3]}`);
