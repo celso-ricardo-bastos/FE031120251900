@@ -11,15 +11,9 @@
             event.target.src = 'img/service3.png'
             elemento.classList.remove('borda-10')
         })
-
-        
     })
-    
-
-    
 
     // const lista = ['Paulo', 'Celso', 'Ana'];
     // lista.forEach
-
 
 })(document)
